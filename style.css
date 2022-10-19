@@ -1,29 +1,54 @@
-body {
-	background-color: yellow;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
 }
-h1, h2 {
-	font-size: 60px;
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(45deg, rgb(208, 0, 255), rgb(146, 68, 255));
+}
+
+h1,
+h2 {
+	font-size: 5rem;
 	text-align: center;
-	font-family: verdana;
-	margin: 10px;
+	font-family: 'Silkscreen', cursive;
+	margin: 30px 10px 20px;
+	font-weight: 400;
+}
+
+h2.papan-skor {
+	margin: 20px 0 0;
+	font-size: 4rem;
 }
 
 button {
 	display: flex;
-	margin: auto;
-	background: black;
-	color: #fff;
-	padding: 8px 10px;
+	margin: auto auto 10px;
+	background: linear-gradient(to top, rgb(35, 35, 50), rgb(89, 0, 255));
+	color: white;
+	font-weight: bold;
+	padding: 12px 40px;
+	border: 0;
 	border-radius: 30px;
+	font-family: monospace;
+	font-size: 1rem;
 }
+
 button:hover {
-	background: rgba(0,0,0,0.5);
+	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 }
 
 .container {
 	width: 600px;
-	margin: auto;
+	margin: -30px auto auto;
 	cursor: url(img/p2.png), auto;
 }
 
@@ -63,4 +88,3 @@ button:hover {
 .tanah.muncul .tikus {
 	top: 0px;
 }
-
